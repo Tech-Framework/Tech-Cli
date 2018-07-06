@@ -8,6 +8,7 @@ import com.techoffice.database.dao.config.BaseConfig;
 import com.techoffice.database.dao.config.annoation.JdbcTypeMapping;
 import com.techoffice.database.dao.config.annoation.JdbcTypeMappings;
 import com.techoffice.database.dao.connection.DatabaseConnection;
+import com.techoffice.database.h2.connection.H2DatabaseConnection;
 import com.techoffice.database.h2.dao.H2EntityDao;
 
 @JdbcTypeMappings({
@@ -43,8 +44,7 @@ public class H2Config extends BaseConfig{
 
 	@Override
 	public DatabaseConnection getDatabaseConnection() {
-		// TODO Auto-generated method stub
-		return null;
+		return new H2DatabaseConnection();
 	}
 	
 }

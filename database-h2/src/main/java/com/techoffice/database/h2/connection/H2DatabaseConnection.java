@@ -13,7 +13,7 @@ public class H2DatabaseConnection implements DatabaseConnection{
 
 	private static Connection conn = null;
 	
-	private H2DatabaseConnection(){}
+	public H2DatabaseConnection(){}
 	
 	static {
 		H2DatabaseConnection instance = new H2DatabaseConnection();

@@ -10,7 +10,6 @@ import com.techoffice.database.dao.convertor.EntityConvertor;
 import com.techoffice.database.dao.model.Entity;
 import com.techoffice.database.dao.model.Field;
 import com.techoffice.database.dao.model.Key;
-import com.techoffice.database.dao.registry.EntityDaoRegistry;
 import com.techoffice.database.dao.util.KeyFieldUtil;
 import com.techoffice.database.h2.config.H2Config;
 import com.techoffice.database.h2.model.Columns;

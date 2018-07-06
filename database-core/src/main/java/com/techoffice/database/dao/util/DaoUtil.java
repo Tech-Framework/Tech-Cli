@@ -40,6 +40,9 @@ public class DaoUtil {
 		List<T> resultList = new ArrayList<T>();
 		try {
 			DatabaseConnection conn = DatabaseConnectionRegistry.getDatabaseConnection(dbConnClazz);
+			if (conn == null){
+				throw new DaoException("cannot find database connection from registry");
+			}
 			Statement stmt = conn.getConnection().createStatement();
 			ResultSet resultSet = stmt.executeQuery(query);
 			while(resultSet.next()){
